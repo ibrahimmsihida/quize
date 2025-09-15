@@ -67,7 +67,7 @@ configurations {
 dependencies {
     implementation "androidx.core:core-ktx:1.12.0"
     implementation "androidx.appcompat:appcompat:1.6.1"
-    implementation "com.google.android.material:material:1.11.0"
+    implementation "com.google.android.material:material:1.12.0"
     implementation "androidx.constraintlayout:constraintlayout:2.1.4"
     
     // مكتبة RecyclerView لعرض قائمة الفئات
@@ -88,12 +88,11 @@ dependencies {
     // مكتبة Preferences للإعدادات
     implementation "androidx.preference:preference-ktx:1.2.1"
     
-    // تم حذف مكتبات ListenableFuture المعقدة
-    // implementation "androidx.concurrent:concurrent-futures:1.1.0"
-    // implementation "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"
+    // إضافة Guava لحل مشكلة ListenableFuture
+    implementation "com.google.guava:guava:31.1-android"
     
-    // تم حذف profileinstaller نهائياً لتجنب الكراش
-    // releaseImplementation "androidx.profileinstaller:profileinstaller:1.3.1"
+    // أو البديل الأخف وزناً:
+    // implementation "androidx.concurrent:concurrent-futures:1.1.0"
     
     // MultiDex للأمان مع minSdk 21+
     implementation "androidx.multidex:multidex:2.0.1"

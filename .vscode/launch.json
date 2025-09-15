@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🚀 Run Android App (Debug)",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/gradlew.bat",
+            "args": ["installDebug"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceRoot}"
+        }
+    ]
+}

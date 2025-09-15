@@ -1,0 +1,13 @@
+{
+    "kotlin.compiler.jvm.target": "1.8",
+    "files.exclude": {
+        "**/build": true,
+        "**/.gradle": true,
+        "**/local.properties": true
+    },
+    "java.configuration.detectJvmsAtStart": false,
+    "java.import.gradle.enabled": true,
+    "java.compile.nullAnalysis.mode": "automatic",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "debug.console.acceptSuggestionOnEnter": "on"
+}
