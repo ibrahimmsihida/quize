@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.msihida.soealwasiba9'
+    compileSdk 34
+
+    // 1) عطّل تقسيم الـ ABI فـ debug باش يخرج APK واحد مناسب للهاتف
+    splits {
+        abi {
+            enable false
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.msihida.soealwasiba9"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        
+        // 2) ركّز على ARM بحال اللي عند جهازك
+        ndk {
+            abiFilters "arm64-v8a", "armeabi-v7a"
+        }
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            // باش ما يتحيّدوش كلاسات مهمّة فـ debug
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    // منع تعارضات META-INF
+    packagingOptions {
+        resources {
+            excludes += ["/META-INF/{AL2.0,LGPL2.1}", "META-INF/DEPENDENCIES", "META-INF/INDEX.LIST"]
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+configurations {
+    all {
+        exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core-ktx:1.12.0"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "com.google.android.material:material:1.11.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    
+    // مكتبة RecyclerView لعرض قائمة الفئات
+    implementation "androidx.recyclerview:recyclerview:1.3.2"
+    
+    // مكتبة CardView لتصميم بطاقات الفئات والإحصائيات
+    implementation "androidx.cardview:cardview:1.0.0"
+    
+    // مكتبة Gson لمعالجة ملفات JSON
+    implementation "com.google.code.gson:gson:2.10.1"
+    
+    // تم حذف Lottie لتجنب مشاكل الرسوم المتحركة
+    // implementation "com.airbnb.android:lottie:6.1.0"
+    
+    // مكتبة SoundPool لتشغيل الأصوات
+    implementation "androidx.media:media:1.6.0"
+    
+    // مكتبة Preferences للإعدادات
+    implementation "androidx.preference:preference-ktx:1.2.1"
+    
+    // تم حذف مكتبات ListenableFuture المعقدة
+    // implementation "androidx.concurrent:concurrent-futures:1.1.0"
+    // implementation "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"
+    
+    // تم حذف profileinstaller نهائياً لتجنب الكراش
+    // releaseImplementation "androidx.profileinstaller:profileinstaller:1.3.1"
+    
+    // MultiDex للأمان مع minSdk 21+
+    implementation "androidx.multidex:multidex:2.0.1"
+    
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+}

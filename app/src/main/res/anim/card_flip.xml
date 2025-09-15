@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+
+    <!-- قلب البطاقة حول المحور Y -->
+    <objectAnimator
+        android:duration="300"
+        android:propertyName="rotationY"
+        android:valueFrom="0"
+        android:valueTo="180" />
+
+    <!-- تأثير تكبير وتصغير خفيف -->
+    <objectAnimator
+        android:duration="150"
+        android:propertyName="scaleX"
+        android:valueFrom="1.0"
+        android:valueTo="1.1"
+        android:repeatCount="1"
+        android:repeatMode="reverse" />
+
+    <objectAnimator
+        android:duration="150"
+        android:propertyName="scaleY"
+        android:valueFrom="1.0"
+        android:valueTo="1.1"
+        android:repeatCount="1"
+        android:repeatMode="reverse" />
+
+</set>

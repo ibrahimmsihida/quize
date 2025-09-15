@@ -1,0 +1,26 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android Studio
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keystores & signing
+*.jks
+*.keystore
+keystore.properties
+
+# Logs
+*.log
+
+# NDK/CMake artifacts
+**/obj/

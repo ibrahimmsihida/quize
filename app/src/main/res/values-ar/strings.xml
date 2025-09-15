@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">سؤالني - QuizMe</string>
+    <string name="start_button">ابدأ</string>
+    <string name="next_button">التالي</string>
+    <string name="previous_button">السابق</string>
+    <string name="submit_button">إرسال</string>
+    <string name="correct_answer">إجابة صحيحة!</string>
+    <string name="wrong_answer">إجابة خاطئة!</string>
+    <string name="score">النتيجة: %1$d</string>
+    
+    <!-- النصوص الجديدة للميزات المضافة -->
+    <string name="categories_title">اختر الفئة</string>
+    <string name="category_icon_description">أيقونة الفئة</string>
+    <string name="stats_button">الإحصائيات</string>
+    <string name="stats_title">إحصائياتك</string>
+    <string name="high_score_label">أعلى نتيجة</string>
+    <string name="completed_quizzes_label">الاختبارات المكتملة</string>
+    <string name="correct_answers_label">الإجابات الصحيحة</string>
+    <string name="wrong_answers_label">الإجابات الخاطئة</string>
+    <string name="accuracy_label">نسبة الدقة</string>
+    <string name="reset_stats_button">إعادة تعيين الإحصائيات</string>
+    <string name="back_button">رجوع</string>
+    <string name="difficulty_easy">سهل</string>
+    <string name="difficulty_medium">متوسط</string>
+    <string name="difficulty_hard">صعب</string>
+    <string name="time_remaining">الوقت المتبقي: %1$d</string>
+    <string name="explanation">شرح الإجابة</string>
+    <string name="ok">موافق</string>
+    <string name="continue_button">استمرار</string>
+    <string name="quiz_completed">اكتمل الاختبار!</string>
+    <string name="quiz_completed_message">لقد أكملت الاختبار بنتيجة %1$d من %2$d (نسبة الدقة: %3$.1f%%)</string>
+    <string name="share_results">مشاركة النتيجة</string>
+    <string name="share_via">مشاركة عبر</string>
+    <string name="back_to_categories">العودة للفئات</string>
+    <string name="try_again">حاول مرة أخرى</string>
+    <string name="time_out">انتهى الوقت!</string>
+    
+    <!-- النصوص الجديدة للفئات الإضافية -->
+    <string name="category_art">فنون</string>
+    <string name="category_art_desc">أسئلة في مجال الفنون والموسيقى والسينما</string>
+    <string name="category_literature">أدب</string>
+    <string name="category_literature_desc">أسئلة في الأدب العربي والعالمي</string>
+    <string name="category_technology">تكنولوجيا</string>
+    <string name="category_technology_desc">أسئلة في مجال التكنولوجيا والحاسوب</string>
+    <string name="category_religion">دين</string>
+    <string name="category_religion_desc">أسئلة دينية متنوعة</string>
+    
+    <!-- النصوص الجديدة للميزات الإضافية -->
+    <string name="daily_challenge">تحدي اليوم</string>
+    <string name="daily_challenge_desc">تحدي يومي جديد</string>
+    
+    <!-- نصوص الوضع المظلم -->
+    <string name="toggle_theme">تبديل المظهر</string>
+    <string name="dark_mode_enabled">تم تفعيل الوضع المظلم</string>
+    <string name="dark_mode_disabled">تم تفعيل الوضع الفاتح</string>
+    <string name="settings">الإعدادات</string>
+    
+    <!-- نصوص المشاركة -->
+    <string name="share_achievement">مشاركة الإنجاز</string>
+    <string name="share_quiz_result">لقد حصلت على %1$d من %2$d في اختبار %3$s! جرب تطبيق سؤالني #QuizMe</string>
+    <string name="share_achievement_text">لقد حققت إنجاز "%1$s" في تطبيق سؤالني! #QuizMe</string>
+    <string name="share_daily_challenge">لقد أكملت تحدي اليوم بنتيجة %1$d من %2$d! جرب تطبيق سؤالني #QuizMe</string>
+    
+    <!-- نصوص الإشعارات -->
+    <string name="notification_channel_name">إشعارات سؤالني</string>
+    <string name="notification_channel_description">إشعارات تذكير وتحديات يومية</string>
+    <string name="daily_challenge_notification_title">تحدي جديد متاح!</string>
+    <string name="daily_challenge_notification_text">تحدي اليوم الجديد متاح الآن. هل أنت مستعد؟</string>
+    <string name="reminder_notification_title">وقت المراجعة!</string>
+    <string name="reminder_notification_text">لم تلعب منذ فترة. عد وحسن مهاراتك!</string>
+    
+    <!-- نصوص وضع التعلم -->
+    <string name="learning_mode">وضع التعلم</string>
+    <string name="learning_mode_description">وضع التعلم يوفر شرحًا مفصلًا للإجابات ويسمح بالتنقل بين الأسئلة بحرية</string>
+    <string name="auto_show_explanation">عرض الشرح تلقائيًا</string>
+    <string name="unlimited_time">وقت غير محدود</string>
+    <string name="allow_navigation">التنقل بين الأسئلة</string>
+    
+    <!-- نصوص الأسئلة المفضلة -->
+    <string name="bookmark_question">حفظ السؤال</string>
+    <string name="remove_bookmark">إزالة من المفضلة</string>
+    <string name="bookmarked_questions">الأسئلة المفضلة</string>
+    <string name="no_bookmarks">لا توجد أسئلة مفضلة</string>
+    
+    <!-- تم إزالة نصوص اللغات لأن التطبيق يستخدم اللغة العربية فقط -->
+    
+    <!-- نصوص مسارات التعلم -->
+    <string name="learning_paths">مسارات التعلم</string>
+    <string name="learning_path_beginner">مسار المبتدئين</string>
+    <string name="learning_path_intermediate">مسار المتوسطين</string>
+    <string name="learning_path_advanced">مسار المتقدمين</string>
+    <string name="path_progress">التقدم: %1$d%%</string>
+    <string name="start_path">بدء المسار</string>
+    <string name="continue_path">استكمال المسار</string>
+    <string name="path_completed">مسار مكتمل</string>
+    
+    <!-- نصوص الإحصائيات المفصلة -->
+    <string name="detailed_stats">إحصائيات مفصلة</string>
+    <string name="category_performance">الأداء حسب الفئة</string>
+    <string name="difficulty_performance">الأداء حسب الصعوبة</string>
+    <string name="time_performance">الأداء حسب الوقت</string>
+    <string name="daily_performance">الأداء اليومي</string>
+    <string name="weekly_performance">الأداء الأسبوعي</string>
+    <string name="monthly_performance">الأداء الشهري</string>
+    <string name="performance_chart">رسم بياني للأداء</string>
+    <string name="export_stats">تصدير الإحصائيات</string>
+    <string name="difficulty_stats">إحصائيات مستوى الصعوبة</string>
+    <string name="time_spent">الوقت المستغرق</string>
+    <string name="quiz_history">سجل الاختبارات</string>
+    <string name="best_category">أفضل فئة</string>
+    <string name="worst_category">أضعف فئة</string>
+    <string name="overall_accuracy">الدقة الإجمالية</string>
+    <string name="leaderboard">لوحة المتصدرين</string>
+    <string name="leaderboard_title">المتصدرون</string>
+    <string name="achievements">الإنجازات</string>
+    <string name="achievements_title">إنجازاتك</string>
+    <string name="achievement_unlocked">تم فتح إنجاز جديد!</string>
+    <string name="quiz_mode">وضع الاختبار</string>
+    <string name="practice_mode">وضع التدريب</string>
+    <string name="timed_mode">وضع محدد بوقت</string>
+    <string name="endless_mode">وضع لا نهائي</string>
+    <string name="hint">تلميح</string>
+    <string name="hints_remaining">التلميحات المتبقية: %1$d</string>
+    <string name="fifty_fifty">50:50</string>
+    <string name="skip_question">تخطي السؤال</string>
+    
+    <!-- نصوص أدوات المساعدة -->
+    <string name="hint_button_with_count">تلميح (%d)</string>
+    <string name="fifty_fifty_button_with_count">50:50 (%d)</string>
+    <string name="skip_button_with_count">تخطي (%d)</string>
+    <string name="no_hints_remaining">لا توجد تلميحات متبقية</string>
+    <string name="no_fifty_fifty_remaining">لا توجد خيارات 50:50 متبقية</string>
+    <string name="no_skips_remaining">لا توجد مرات تخطي متبقية</string>
+    <string name="hint_message">الإجابة الصحيحة هي الخيار %s</string>
+    <string name="difficulty_selection">اختر مستوى الصعوبة</string>
+    
+    <!-- النصوص الخاصة بفئة الألغاز -->
+    <string name="category_puzzles">ألغاز</string>
+    <string name="category_puzzles_desc">ألغاز وأحاجي منطقية وذهنية</string>
+    
+    <!-- النصوص الخاصة بتحسينات واجهة المستخدم -->
+    <string name="search_categories">ابحث عن فئة...</string>
+    <string name="filter_categories">تصفية الفئات</string>
+    <string name="sort_by">ترتيب حسب</string>
+    <string name="sort_by_name">الاسم</string>
+    <string name="sort_by_difficulty">مستوى الصعوبة</string>
+</resources>

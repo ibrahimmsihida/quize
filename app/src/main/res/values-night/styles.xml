@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- نمط الزوايا المستديرة للصور للوضع المظلم -->
+    <style name="ShapeAppearance.Material3.Corner.Medium" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    
+    <!-- نمط الأزرار للوضع المظلم -->
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="backgroundTint">@color/button_color</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+    
+    <!-- نمط البطاقات للوضع المظلم -->
+    <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+    
+    <!-- نمط النصوص للوضع المظلم -->
+    <style name="TextAppearance.App.Headline" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+    
+    <style name="TextAppearance.App.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/text_color_secondary</item>
+    </style>
+    
+    <!-- نمط الفواصل للوضع المظلم -->
+    <style name="Widget.App.Divider" parent="">
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    
+    <!-- نمط أزرار الراديو للوضع المظلم -->
+    <style name="Widget.App.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="buttonTint">@color/colorAccent</item>
+    </style>
+    
+    <!-- نمط الأيقونات للوضع المظلم -->
+    <style name="Widget.App.Icon" parent="">
+        <item name="tint">@color/icon_color</item>
+    </style>
+</resources>

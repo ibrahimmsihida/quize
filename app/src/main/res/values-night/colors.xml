@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- ألوان الوضع المظلم -->
+    <color name="colorPrimary">#BB86FC</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorCorrect">#4CAF50</color>
+    <color name="colorWrong">#F44336</color>
+    
+    <!-- ألوان الخلفية والنص للوضع المظلم -->
+    <color name="background_color">#121212</color>
+    <color name="card_background">#1F1F1F</color>
+    <color name="text_color_primary">#FFFFFF</color>
+    <color name="text_color_secondary">#B3FFFFFF</color> <!-- 70% white -->
+    <color name="divider_color">#1FFFFFFF</color> <!-- 12% white -->
+    
+    <!-- ألوان مستويات الصعوبة -->
+    <color name="difficulty_easy">#4CAF50</color>
+    <color name="difficulty_medium">#FFC107</color>
+    <color name="difficulty_hard">#F44336</color>
+    <color name="time_low">#F44336</color>
+    
+    <!-- ألوان إضافية للوضع المظلم -->
+    <color name="surface_color">#121212</color>
+    <color name="error_color">#CF6679</color>
+    <color name="button_color">#BB86FC</color>
+    <color name="button_text_color">#000000</color>
+    <color name="icon_color">#FFFFFF</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="primary_color">#BB86FC</color>
+    <color name="colorPrimaryLight">#CE93D8</color>
+</resources>

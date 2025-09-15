@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- قسم المظهر -->
+    <PreferenceCategory
+        android:key="appearance_category"
+        android:title="@string/appearance">
+
+        <SwitchPreferenceCompat
+            android:key="dark_mode"
+            android:title="@string/dark_mode"
+            android:summary="@string/dark_mode_summary"
+            android:icon="@drawable/ic_dark_mode" />
+
+    </PreferenceCategory>
+
+    <!-- قسم الإشعارات -->
+    <PreferenceCategory
+        android:key="notifications_category"
+        android:title="@string/notifications">
+
+        <SwitchPreferenceCompat
+            android:key="notifications"
+            android:title="@string/daily_reminder"
+            android:summary="@string/daily_reminder_summary"
+            android:icon="@drawable/ic_notification" />
+
+    </PreferenceCategory>
+
+    <!-- قسم وضع التعلم -->
+    <PreferenceCategory
+        android:key="learning_category"
+        android:title="@string/learning_mode">
+
+        <SwitchPreferenceCompat
+            android:key="learning_mode"
+            android:title="@string/enable_learning_mode"
+            android:summary="@string/learning_mode_summary"
+            android:icon="@drawable/ic_learning" />
+
+        <SwitchPreferenceCompat
+            android:key="auto_explanation"
+            android:title="@string/auto_explanation"
+            android:summary="@string/auto_explanation_summary"
+            android:dependency="learning_mode"
+            android:icon="@drawable/ic_explanation" />
+
+    </PreferenceCategory>
+
+    <!-- قسم المشاركة -->
+    <PreferenceCategory
+        android:key="sharing_category"
+        android:title="@string/sharing">
+
+        <Preference
+            android:key="share_app"
+            android:title="@string/share_app"
+            android:summary="@string/share_app_summary"
+            android:icon="@drawable/ic_share">
+            <intent
+                android:action="android.intent.action.SEND"
+                android:mimeType="text/plain">
+                <extra
+                    android:name="android.intent.extra.TEXT"
+                    android:value="@string/share_app_text" />
+            </intent>
+        </Preference>
+
+    </PreferenceCategory>
+
+    <!-- قسم عن التطبيق -->
+    <PreferenceCategory
+        android:key="about_category"
+        android:title="@string/about">
+
+        <Preference
+            android:key="version"
+            android:title="@string/version"
+            android:summary="1.0.0" />
+
+        <Preference
+            android:key="privacy_policy"
+            android:title="@string/privacy_policy" />
+
+        <Preference
+            android:key="terms_of_service"
+            android:title="@string/terms_of_service" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
